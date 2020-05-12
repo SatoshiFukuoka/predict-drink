@@ -5,14 +5,18 @@ prediction of beer, coffee, or water
 Flaskを使用してWeb上で画像を読み込みます。
 
 ## 使い方
-※以下のpre-trained　modelをダウンロードして'./'に置き、
+※以下のファイルの中身を'./'に置き、
+
 https://d.kuku.lu/3174a794e
 
 set FLASK_APP=predictfile.py
+
 python -m flask run --host=0.0.0.0 --port=8080 --without-threads
+
 とすれば利用できます。
 
 以下各モジュールの簡易説明
+
 1. download.py (引数:画像の種類）　Flickr APIを利用し、画像を収集
 
 2. gen_data_augmented.py 画像を配列に入れ込む
